@@ -1,0 +1,24 @@
+/* universal reset so that all browsers display everything the same */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* changes box model so that border and padding is no longer added to the total width */
+}
+
+html {
+  /* we want to calclate all rems from 10px */
+  /* font-size: 10px; */
+
+  /* percentage of default font size set by browser - assume default is 16px so 10/16*/
+
+// This defines what 1rem is
+  font-size: 62.5%;
+}
+
+/* project-wide font defaults should be set in body, because all child elements will inherit this */
+body {
+  box-sizing: border-box;
+}
